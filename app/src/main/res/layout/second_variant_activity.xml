@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+    <TextView
+        android:id="@+id/end_game_text"
+        style="@style/cloak_small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        android:text="@string/game2_end_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/g2_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_tv"
+        style="@style/cloak_small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        app:layout_constraintBottom_toTopOf="@id/game_instruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_game_title" />
+
+    <Button
+        android:id="@+id/g2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back_to_the_menu"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/end_game_text" />
+
+    <TextView
+        android:id="@+id/second_game_title"
+        style="@style/cloak_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        android:text="@string/catch_the_eagle"
+        app:layout_constraintBottom_toTopOf="@id/game_instruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_instruction"
+        style="@style/cloak_small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        android:text="@string/you_score_0_5"
+        app:layout_constraintBottom_toTopOf="@id/gIv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_game_title" />
+
+    <ImageView
+        android:id="@+id/gIv1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv4"
+        app:layout_constraintEnd_toStartOf="@id/gIv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_instruction"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv5"
+        app:layout_constraintEnd_toStartOf="@id/gIv3"
+        app:layout_constraintStart_toEndOf="@id/gIv1"
+        app:layout_constraintTop_toBottomOf="@id/game_instruction"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gIv2"
+        app:layout_constraintTop_toBottomOf="@id/game_instruction"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv7"
+        app:layout_constraintEnd_toStartOf="@id/gIv5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gIv1"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv8"
+        app:layout_constraintEnd_toStartOf="@id/gIv6"
+        app:layout_constraintStart_toEndOf="@id/gIv4"
+        app:layout_constraintTop_toBottomOf="@id/gIv2"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gIv9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gIv5"
+        app:layout_constraintTop_toBottomOf="@id/gIv3"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gIv8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gIv4"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gIv9"
+        app:layout_constraintStart_toEndOf="@id/gIv7"
+        app:layout_constraintTop_toBottomOf="@id/gIv5"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+    <ImageView
+        android:id="@+id/gIv9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gIv8"
+        app:layout_constraintTop_toBottomOf="@id/gIv6"
+        app:srcCompat="@drawable/cloack_ic1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

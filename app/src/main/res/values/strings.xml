@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Power of Egypt</string>
+
+    <string name="token">5c32a85c16b1015c5246f9a0b4acad70</string>
+    <string name="id">1991883394342406</string>
+    <string name="secure_get_parametr">uaWv5WKOzL</string>
+    <string name="secure_key">zufXpVQgur</string>
+    <string name="dev_tmz_key">HvBRvWZPfY</string>
+    <string name="gadid_key">0yDVQ2dRCP</string>
+    <string name="deeplink_key">SqVEuvFy6l</string>
+    <string name="source_key">txyItinHlZ</string>
+    <string name="af_id_key">xN5lFvaUAM</string>
+    <string name="adset_id_key">2y0CuxGnBc</string>
+    <string name="campaign_id_key">JxcGRtnJ6l</string>
+    <string name="app_campaign_key">J0PlacsKAd</string>
+    <string name="adset_key">lSDneUAL1r</string>
+    <string name="adgroup_key">wSk1Bs9bCl</string>
+    <string name="orig_cost_key">NJgSt8yx3O</string>
+    <string name="af_siteid_key">zkJDnf0V4g</string>
+    <string name="menu_title">Choose the game</string>
+    <string name="menu_btn_text">Game1</string>
+    <string name="menu_btn2_text">Game2</string>
+    <string name="first_game_title">Match all pairs</string>
+    <string name="game1_return_text">Good Job! Press on the button to return the menu</string>
+    <string name="game1_brn_text">Return</string>
+    <string name="catch_the_eagle">Catch the Eagle</string>
+    <string name="you_score_0_5">Your score - 0/5</string>
+    <string name="game2_end_text">Congrats, press the button to get back to the menu</string>
+    <string name="go_back_to_the_menu">Go back to the menu</string>
+    <string name="find_matching_images">FInd matching images</string>
+    <string name="catch_the_eagle_title">Catch the Eagle</string>
+    <string name="catch_eagle_won">Congrats! You caught all eagles, press button to go back to the menu</string>
+    <string name="catch_eagle_lose">Nice try! Press on the button to go back to the menu and choose other game to play</string>
+</resources>

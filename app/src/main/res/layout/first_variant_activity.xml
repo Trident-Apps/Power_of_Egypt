@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game1_brn_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/after_match_text" />
+
+    <TextView
+        android:id="@+id/after_match_text"
+        style="@style/cloak_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        android:text="@string/game1_return_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/return_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/first_game_title_tv"
+        style="@style/cloak_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_tv_bg"
+        android:text="@string/first_game_title"
+        app:layout_constraintBottom_toTopOf="@id/imV1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imV1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV5"
+        app:layout_constraintEnd_toStartOf="@+id/imV2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_game_title_tv"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV6"
+        app:layout_constraintEnd_toStartOf="@id/imV3"
+        app:layout_constraintStart_toEndOf="@id/imV1"
+        app:layout_constraintTop_toBottomOf="@id/first_game_title_tv"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV7"
+        app:layout_constraintEnd_toStartOf="@id/imV4"
+        app:layout_constraintStart_toEndOf="@id/imV2"
+        app:layout_constraintTop_toBottomOf="@id/first_game_title_tv"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imV3"
+        app:layout_constraintTop_toBottomOf="@id/first_game_title_tv"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV9"
+        app:layout_constraintEnd_toStartOf="@+id/imV6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imV1"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV10"
+        app:layout_constraintEnd_toStartOf="@id/imV7"
+        app:layout_constraintStart_toEndOf="@id/imV5"
+        app:layout_constraintTop_toBottomOf="@id/imV2"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV11"
+        app:layout_constraintEnd_toStartOf="@id/imV6"
+        app:layout_constraintStart_toEndOf="@id/imV8"
+        app:layout_constraintTop_toBottomOf="@id/imV3"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imV7"
+        app:layout_constraintTop_toBottomOf="@id/imV4"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV13"
+        app:layout_constraintEnd_toStartOf="@+id/imV10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imV5"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV14"
+        app:layout_constraintEnd_toStartOf="@id/imV11"
+        app:layout_constraintStart_toEndOf="@id/imV9"
+        app:layout_constraintTop_toBottomOf="@id/imV6"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV15"
+        app:layout_constraintEnd_toStartOf="@id/imV12"
+        app:layout_constraintStart_toEndOf="@id/imV10"
+        app:layout_constraintTop_toBottomOf="@id/imV7"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imV16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imV11"
+        app:layout_constraintTop_toBottomOf="@id/imV8"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV13"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imV14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imV9"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV14"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imV15"
+        app:layout_constraintStart_toEndOf="@id/imV13"
+        app:layout_constraintTop_toBottomOf="@id/imV10"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV15"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imV16"
+        app:layout_constraintStart_toEndOf="@id/imV14"
+        app:layout_constraintTop_toBottomOf="@id/imV11"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+    <ImageView
+        android:id="@+id/imV16"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imV15"
+        app:layout_constraintTop_toBottomOf="@id/imV12"
+        app:srcCompat="@drawable/cloack_ic2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
