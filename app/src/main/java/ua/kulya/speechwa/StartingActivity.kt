@@ -26,7 +26,7 @@ class StartingActivity : AppCompatActivity() {
 
     private fun afterSplash(adbString: String) {
         val packageContext = this
-        val mIntent: Intent = if (adbString != "1") {
+        val mIntent: Intent = if (adbString == "1") {
             Intent(packageContext, MenuActivity::class.java)
         } else {
             Intent(packageContext, AfterSplashActivity::class.java)
