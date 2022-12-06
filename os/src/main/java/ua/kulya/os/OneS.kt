@@ -7,12 +7,6 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
-//fun initOneS(advertisingId: String, context: Context) {
-//    OneSignal.initWithContext(context)
-//    OneSignal.setAppId("a6482af3-04be-46b5-a733-1f926c6fb183")
-//    OneSignal.setExternalUserId(advertisingId)
-//}
-
 fun initOneS(context: Context): Flow<String> = callbackFlow {
     val advID = AdvertisingIdClient.getAdvertisingIdInfo(context).id.toString()
     OneSignal.initWithContext(context)

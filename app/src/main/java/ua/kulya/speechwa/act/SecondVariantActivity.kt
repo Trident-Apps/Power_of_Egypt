@@ -1,7 +1,6 @@
 package ua.kulya.speechwa.act
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.util.Log
 import android.view.View

@@ -10,14 +10,12 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
 fun getAfData(ctx: Context): Flow<MutableMap<String, Any>?> = callbackFlow {
-    AppsFlyerLib.getInstance().init("", object : AppsFlyerConversionListener {
+    AppsFlyerLib.getInstance().init("sQy5CyXZZzMAHeda8mzBQP", object : AppsFlyerConversionListener {
         override fun onConversionDataSuccess(p0: MutableMap<String, Any>?) {
-            Log.d("customTag", "onConversionDataSuccess")
             trySend(p0)
         }
 
         override fun onConversionDataFail(p0: String?) {
-            Log.d("customTag", "onConversionDataFail")
             trySend(null)
         }
 

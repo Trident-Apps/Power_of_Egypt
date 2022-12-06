@@ -3,20 +3,6 @@
 
     <string name="token">5c32a85c16b1015c5246f9a0b4acad70</string>
     <string name="id">1991883394342406</string>
-    <string name="secure_get_parametr">uaWv5WKOzL</string>
-    <string name="secure_key">zufXpVQgur</string>
-    <string name="dev_tmz_key">HvBRvWZPfY</string>
-    <string name="gadid_key">0yDVQ2dRCP</string>
-    <string name="deeplink_key">SqVEuvFy6l</string>
-    <string name="source_key">txyItinHlZ</string>
-    <string name="af_id_key">xN5lFvaUAM</string>
-    <string name="adset_id_key">2y0CuxGnBc</string>
-    <string name="campaign_id_key">JxcGRtnJ6l</string>
-    <string name="app_campaign_key">J0PlacsKAd</string>
-    <string name="adset_key">lSDneUAL1r</string>
-    <string name="adgroup_key">wSk1Bs9bCl</string>
-    <string name="orig_cost_key">NJgSt8yx3O</string>
-    <string name="af_siteid_key">zkJDnf0V4g</string>
     <string name="menu_title">Choose the game</string>
     <string name="menu_btn_text">Game1</string>
     <string name="menu_btn2_text">Game2</string>

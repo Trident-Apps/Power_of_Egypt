@@ -46,12 +46,10 @@ class WebFrag : Fragment(R.layout.web_frag) {
         passedLink = arguments?.getString("w", "haven't been passed").toString()
         mVm = ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
             .create(EgyptUserVM::class.java)
-        Log.d("customTag", "web fragment passed link is - $passedLink")
         val activityResult =
             registerForActivityResult(ActivityResultContracts.GetMultipleContents()) { uris ->
                 mValueCallback?.onReceiveValue(uris.toTypedArray())
             }
-        Log.d("customTAg", "passed url is - $passedLink")
         webView = bind.web
         with(webView) {
             webViewClient = object : WebViewClient() {
@@ -78,7 +76,7 @@ class WebFrag : Fragment(R.layout.web_frag) {
                 override fun onPageFinished(view: WebView?, url: String?) {
                     super.onPageFinished(view, url)
                     if (isPageRedirected) {
-                        if (url == "https://goldenworld.ltd") {
+                        if (url == "https://goldenworld.ltd/") {
                             with(Intent(requireActivity(), MenuActivity::class.java)) {
                                 requireActivity().startActivity(this)
                                 requireActivity().finish()
@@ -87,7 +85,6 @@ class WebFrag : Fragment(R.layout.web_frag) {
                             mVm.allInfo.observe(viewLifecycleOwner) {
                                 if (it.isNullOrEmpty()) {
                                     mVm.addUserDAta(EgyptUserData(1, url))
-                                    Log.d("customTag", "onPageFinished url - $url")
                                 }
                             }
                         }
@@ -145,9 +142,7 @@ class WebFrag : Fragment(R.layout.web_frag) {
                     }
                     return true
                 }
-
             }
-
         }
         return bind.root
     }

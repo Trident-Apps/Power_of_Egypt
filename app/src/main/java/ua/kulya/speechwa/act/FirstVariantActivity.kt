@@ -1,9 +1,7 @@
 package ua.kulya.speechwa.act
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import ua.kulya.speechwa.R
@@ -25,18 +23,6 @@ class FirstVariantActivity : BaseViewActivity<FirstVariantActivityBinding>() {
         R.drawable.cloack_ic3,
         R.drawable.cloack_ic4,
         R.drawable.cloack_ic5,
-//        R.drawable.cloack_ic1,
-//        R.drawable.cloack_ic3,
-//        R.drawable.cloack_ic4,
-//        R.drawable.cloack_ic5,
-//        R.drawable.cloack_ic1,
-//        R.drawable.cloack_ic3,
-//        R.drawable.cloack_ic4,
-//        R.drawable.cloack_ic5,
-//        R.drawable.cloack_ic1,
-//        R.drawable.cloack_ic3,
-//        R.drawable.cloack_ic4,
-//        R.drawable.cloack_ic5
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

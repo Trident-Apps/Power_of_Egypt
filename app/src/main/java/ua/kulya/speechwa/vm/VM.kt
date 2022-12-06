@@ -26,13 +26,3 @@ class EgyptUserVM(app: Application) : AndroidViewModel(app) {
         repo.loadIntoDb(egyptUserData)
     }
 }
-
-//class FactoryForVM(private val app: Application, private val egyptRep: EgyptRep) :
-//    ViewModelProvider.AndroidViewModelFactory(app) {
-//    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-//        if (modelClass.isAssignableFrom(EgyptUserVM::class.java)) {
-//            return EgyptUserVM(app, egyptRep) as T
-//        }
-//        throw IllegalArgumentException("VM Factory Error")
-//    }
-//}

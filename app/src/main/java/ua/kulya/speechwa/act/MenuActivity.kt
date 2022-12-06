@@ -2,8 +2,6 @@ package ua.kulya.speechwa.act
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import ua.kulya.speechwa.R
 import ua.kulya.speechwa.databinding.StartMenuAcBinding
 
 class MenuActivity : BaseViewActivity<StartMenuAcBinding>() {
