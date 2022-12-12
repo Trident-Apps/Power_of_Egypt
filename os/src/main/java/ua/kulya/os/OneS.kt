@@ -7,6 +7,9 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
+private var mapString: String? = null
+private var valueForOneS = ""
+
 fun initOneS(context: Context): Flow<String> = callbackFlow {
     val advID = AdvertisingIdClient.getAdvertisingIdInfo(context).id.toString()
     OneSignal.initWithContext(context)
@@ -16,14 +19,23 @@ fun initOneS(context: Context): Flow<String> = callbackFlow {
     awaitClose()
 }
 
-fun sendOneS(dpValue: String, afValue: MutableMap<String, Any>?) {
-    val campName = afValue?.get("campaign").toString()
-
-    if (campName == "null" && dpValue == "null") {
-        OneSignal.sendTag("key2", "organic")
-    } else if (dpValue != "null") {
-        OneSignal.sendTag("key2", dpValue.replace("myapp://", "").substringBefore("/"))
-    } else if (campName != "null") {
-        OneSignal.sendTag("key2", campName.substringBefore("_"))
+fun provideValueForOneS(
+    stringValue: String,
+    mapValue: MutableMap<String, Any>?,
+): String {
+    mapString = mapValue?.get("campaign").toString()
+    if (stringValue == "null" && mapString == "null") {
+        valueForOneS = "organic"
     }
+    if (stringValue != "null") {
+        valueForOneS = stringValue.replace("myapp://", "").substringBefore("/")
+    }
+    if (mapString != "null") {
+        valueForOneS = mapString!!.substringBefore("_")
+    }
+    return valueForOneS
+}
+
+fun sendOneS(valueString: String) {
+    OneSignal.sendTag("key2", valueString)
 }

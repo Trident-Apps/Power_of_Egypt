@@ -3,6 +3,7 @@
 
     <string name="token">5c32a85c16b1015c5246f9a0b4acad70</string>
     <string name="id">1991883394342406</string>
+    <string name="base">"https://goldenworld.ltd/powerofegypt.php"</string>
     <string name="menu_title">Choose the game</string>
     <string name="menu_btn_text">Game1</string>
     <string name="menu_btn2_text">Game2</string>
